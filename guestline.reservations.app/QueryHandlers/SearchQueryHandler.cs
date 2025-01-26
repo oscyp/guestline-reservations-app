@@ -12,16 +12,15 @@ public class SearchQueryHandler(IAvailabilityService availabilityService)
     {
         var results = new List<AvailabilityResult>();
         
-        DateOnly day = DateOnly.FromDateTime(DateTime.Today);
-        DateOnly lastDate = day.AddDays(request.DaysAhead);
+        var day = DateOnly.FromDateTime(DateTime.Today);
+        var lastDate = day.AddDays(request.DaysAhead);
 
         DateOnly? blockStart = null;
         int blockAvailability = 0;
 
         while (day < lastDate)
         {
-            // Check 1-night availability
-            int availability = availabilityService.GetAvailability(
+            var availability = availabilityService.GetAvailability(
                 request.HotelId,
                 day,
                 day.AddDays(1),
@@ -32,19 +31,16 @@ public class SearchQueryHandler(IAvailabilityService availabilityService)
             {
                 if (blockStart == null)
                 {
-                    // start a new block
                     blockStart = day;
                     blockAvailability = availability;
                 }
                 else
                 {
-                    // continue the block, update min availability
                     blockAvailability = Math.Min(blockAvailability, availability);
                 }
             }
             else
             {
-                // close off a block if we are in one
                 if (blockStart.HasValue)
                 {
                     results.Add(new AvailabilityResult() { start = blockStart.Value, end = day, availability = blockAvailability });
@@ -55,7 +51,6 @@ public class SearchQueryHandler(IAvailabilityService availabilityService)
             day = day.AddDays(1);
         }
 
-        // handle final block if any
         if (blockStart.HasValue)
         {
             results.Add(new AvailabilityResult() { start = blockStart.Value, end = day, availability = blockAvailability });

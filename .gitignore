@@ -3,3 +3,5 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+/.idea
+guestline-reservations-app.sln.DotSettings.user

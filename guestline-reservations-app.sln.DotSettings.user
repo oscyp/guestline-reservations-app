@@ -1,0 +1,17 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=33fb8080_002Dd681_002D4c97_002D87f6_002Dc79c127245a4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AvailabilityServiceTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::05FEA680-E899-49E5-8907-4D03AA416609::net8.0::guestline.reservations.app.tests.AvailabilityServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4a2091a7_002Da506_002D40f9_002D9449_002De2cc63d18eb1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AvailabilityServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::AF12791B-81A3-412F-BF64-2617F105951C::net8.0::guestline.reservations.app.tests.AvailabilityServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ccf58bdf_002Dc7e6_002D40fb_002Db22e_002Db16482d30765/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AvailabilityServiceTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::05FEA680-E899-49E5-8907-4D03AA416609::net8.0::guestline.reservations.app.tests.AvailabilityServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>
